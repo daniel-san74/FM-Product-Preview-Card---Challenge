@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300&family=Outfit:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Lato:wght@300&family=Montserrat:wght@300&family=Outfit:wght@700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+   background-color: hsl(30, 38%, 92%);
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   align-items: center;
+}
+.background{
+    width:500px ;
+    height:400px;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+  
+    
+}
+img{
+    height: 400px;
+    width: 250px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.perfume{
+    font-family:"Montserrat", sans-serif ;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-weight: bold;
+    
+}
+.rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#title{
+    font-family: "Fraunces" , 'Times New Roman', Times, serif;
+    font-size: 30px;  
+    font-weight: bolder;
+}
+.text{
+    font-family: "Montserrat",sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color:hsl(228, 12%, 48%) ;
+}
+
+#price{
+    float: left;
+    margin-right: 50px;
+    font-family: "Fraunces",'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    font-weight: bold;
+}
+#smpr{
+    text-align: center;
+    text-decoration: line-through;
+    font-family: "Montserrat",sans-serif;
+    color:hsl(228, 12%, 48%) ;
+}
+button{
+    background-color: rgb(6, 94, 42);
+    width: 125px;
+    height: 30px;
+    color: #fff;
+    font-family: "Montserrat",sans-serif;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+#title, .text{
+    margin-left: 20px;
+}
+@media  screen and (max-width:380px) {
+    .background{
+        display: flex;
+        flex-direction: column;
+        height: 700px;
+    }
+    
+}
